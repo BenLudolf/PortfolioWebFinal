@@ -1,0 +1,65 @@
+<head>
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ben ludolf</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Partical Simulator</h3>
+                <p>
+                    Uses Vector3 to track particle position and speed.
+                    Particles aditionally have a radius. Uses pathagrium theorm
+                    to calc how close each particle is to every other particle.
+                    If distance is smaller than radius, bounce.
+                    There is two special particles. The spawner and the enemy,
+                    each have a given function. Spawner spawns, and enemy kills on 
+                    collision.
+                </p>
+                <img src="project2.PNG" id="smallImage">
+                <br>
+                <a href="https://github.com/BenLudolf/particleSimulator.git" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Nightcraft Rendering Engine</h3>
+                <p> A crude rendering engine inspired by 90's doom. Uses omly
+                    imported canvas java featers. Uses complex math to cascade a 
+                    sine/cosine grid. Tapering grid with an arbitrary depth value gives
+                    us a 3D field. Calcs objects vertecies and draws lines to create 
+                    shapes. Files in and texures shapes. Uses Threads and inports runnables
+                    to allow for userdata. OOP Final project.
+                </p>
+                <img src="project1.PNG" id="smallImage">
+                <a href="https://github.com/BenLudolf/nightCraft.git" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>AI Tiktok Generator</h3>
+                <p>Couldnt get github of files because they're back home.</p>
+                <img src="project3.PNG" id="smallImage">
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 benjamin Ludolf</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
